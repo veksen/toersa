@@ -393,21 +393,22 @@ jQuery( document ).ready(function( $ ) {
 	  });
 
 	function setModalMaxHeight(element) {
-		alert('hello');
-	  this.$element     = $(element);  
-	  this.$content     = this.$element.find('.modal-content');
-	  var borderWidth   = this.$content.outerHeight() - this.$content.innerHeight();
+	  var that = {};
+
+	  that.$element     = $(element);
+	  that.$content     = that.$element.find('.modal-content');
+	  var borderWidth   = that.$content.outerHeight() - that.$content.innerHeight();
 	  var dialogMargin  = $(window).width() < 768 ? 20 : 60;
 	  var contentHeight = $(window).height() - (dialogMargin + borderWidth);
-	  var headerHeight  = this.$element.find('.modal-header').outerHeight() || 0;
-	  var footerHeight  = this.$element.find('.modal-footer').outerHeight() || 0;
+	  var headerHeight  = that.$element.find('.modal-header').outerHeight() || 0;
+	  var footerHeight  = that.$element.find('.modal-footer').outerHeight() || 0;
 	  var maxHeight     = contentHeight - (headerHeight + footerHeight);
 
-	  this.$content.css({
+	  that.$content.css({
 	      'overflow': 'hidden'
 	  });
-	  
-	  this.$element
+
+	  that.$element
 	    .find('.modal-body').css({
 	      'max-height': maxHeight,
 	      'overflow-y': 'auto'
