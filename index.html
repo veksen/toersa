@@ -68,7 +68,7 @@
 								<li><a href="close-protection.html">Close Protection</a></li>
 								<li><a href="training.html">Training</a></li>
 								<li><a href="private-investigation.html">Private Investigation</a></li>
-								<li><a href="lost-provention.html">Lost Provention</a></li>
+								<li><a href="lost-provention.html">Lost Prevention</a></li>
 							</ul>
 						</li>
 						<li><a href="career.html">Careers</a></li>
@@ -91,12 +91,12 @@
 							<li><a href="close-protection.html">Close Protection</a></li>
 							<li><a href="training.html">Training</a></li>
 							<li><a href="private-investigation.html">Private Investigation</a></li>
-							<li><a href="lost-provention.html">Lost Provention</a></li>
+							<li><a href="lost-provention.html">Lost Prevention</a></li>
 						</ul>
 					</li>
 					<li><a href="career.html">Careers</a></li>
 					<li><a href="contact.html">Contact</a></li>
-					<li><a href="../fr/index.html">Fr</a></li>
+					<li><a href="/fr/index.html">Fr</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -147,7 +147,7 @@
 				</div>
 				<div class="col-md-4">
 					<div class="service-item">
-						<img src="assets/images/festival_homepage_img.png" alt="Festival Image">
+						<img src="http://placehold.it/370x210" alt="Festival Image">
 						<h4>Festival Services</h4>
 						<p>TOERSA security offers a great variety of services to secure your special events the best way possible.</p>
 						<a href="festival-services.html">Read More</a>
@@ -313,12 +313,58 @@
 	    <div class="modal-content">
 	      <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <h4 class="modal-title">Modal Header</h4>
+	        <h4 class="modal-title">Get a Quote</h4>
 	      </div>
 	      <div class="modal-body">
-	        <p>Some text in the modal.</p>
+	      	<div class="contact-form">
+	      		<form id="contact_form" action="MAILTO:pascal.beaulne@gmail.com" method="POST" enctype="multipart/form-data">
+					<div class="row">
+						<div class="col-md-12">
+							<input type="text" class="name" name="s" placeholder="Event Name" value="">
+						</div>
+						<div class="col-md-12">
+							<input type="text" class="name" name="s" placeholder="Company Name" value="">
+						</div>
+						<div class="col-md-12">
+							<label for="event type">Type of Event:</label>
+							<select name="event type">
+							  <option value="Bar/NightClub">Bar/Nightclub</option>
+							  <option value="Special Event">Special Event</option>
+							</select>
+						</div>	
+						<div class="col-md-12">
+							<input type="number" class="hours" name="s" placeholder="Expected Attendance" value="">
+						</div>
+						<div class="col-md-12">
+							<input type="number" class="attendance" name="s" placeholder="Hours of Operation" value="">
+						</div>
+						<div class="col-md-12">
+							<input type="text" class="demographic" name="s" placeholder="Patron Demographics" value="">
+						</div>
+						<div class="col-md-12">
+							<label for="event type">Date of Event:</label>
+							<input type="date" class="date" name="s" value="">
+						</div>
+						<div class="col-md-12">
+							<label for="alcohol">Will there be alcohol served ?</label>
+							<select name="Alcohol">
+							  <option value="Yes">Yes</option>
+							  <option value="No">No</option>
+							</select>
+						</div>
+						
+						<div class="col-md-12">
+							<input type="text" class="email" name="s" placeholder="Email address" value="">
+						</div>
+						<div class="col-md-12">
+							<textarea id="message" class="message" name="message" placeholder="Addtional Information"></textarea>
+						</div>
+					</div>
+				</form>	
+	      	</div>
 	      </div>
 	      <div class="modal-footer">
+	      	<button type="button" class="btn btn-default" data-dismiss="modal">Submit</button>
 	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 	      </div>
 	    </div>
