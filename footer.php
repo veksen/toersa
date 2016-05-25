@@ -11,20 +11,20 @@
 				<div class="company-pages">
 					<h2>Company Pages</h2>
 					<ul class="first-list">
-						<li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="#"><i class="fa fa-angle-double-right"></i>About Us</a></li>
-						<li><a href="#"><i class="fa fa-angle-double-right"></i>Guard Services</a></li>
-						<li><a href="#"><i class="fa fa-angle-double-right"></i>Festival Services</a></li>
+						<li><a href="index.php"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="about.php"><i class="fa fa-angle-double-right"></i>About Us</a></li>
+						<li><a href="guard-services.php"><i class="fa fa-angle-double-right"></i>Guard Services</a></li>
+						<li><a href="festival-services.php"><i class="fa fa-angle-double-right"></i>Festival Services</a></li>
 					</ul>
 					<ul class="second-list">
-						<li><a href="#"><i class="fa fa-angle-double-right"></i>Close Protection</a></li>
-						<li><a href="#"><i class="fa fa-angle-double-right"></i>Training</a></li>
-						<li><a href="#"><i class="fa fa-angle-double-right"></i>Private Investigation</a></li>
-						<li><a href="#"><i class="fa fa-angle-double-right"></i>Lost Provention</a></li>
+						<li><a href="close-protection.php"><i class="fa fa-angle-double-right"></i>Close Protection</a></li>
+						<li><a href="training.php"><i class="fa fa-angle-double-right"></i>Training</a></li>
+						<li><a href="private-investigation.php"><i class="fa fa-angle-double-right"></i>Private Investigation</a></li>
+						<li><a href="lost-prevention.php"><i class="fa fa-angle-double-right"></i>Lost Prevention</a></li>
 					</ul>
 					<ul class="third-list">
-						<li><a href="#"><i class="fa fa-angle-double-right"></i>Careers</a></li>
-						<li><a href="#"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+						<li><a href="career.php"><i class="fa fa-angle-double-right"></i>Careers</a></li>
+						<li><a href="contact.php"><i class="fa fa-angle-double-right"></i>Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -39,8 +39,8 @@
 			</div>
 			<div class="col-md-6">
 				<ul>
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://www.facebook.com/TOERSA-Security-10150133472005372"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://twitter.com/TOERSASecurity"><i class="fa fa-twitter"></i></a></li>
 				</ul>
 			</div>
 		</div>

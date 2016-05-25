@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-	<title>TOERSA Security INC.</title>
+	<title>TOERSA Security INC. - Contact Us</title>
 
 
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
@@ -23,7 +23,9 @@
 
 </head>
 <body>
+
 	<?php require("header.php"); ?>
+
 	<div id="page-heading">
 		<div class="container">
 			<div class="row">
@@ -40,20 +42,21 @@
 			<div class="row">
 				<div class="col-md-8">
 					<div class="contact-form">
-						<form id="contact_form" action="MAILTO:pascal.beaulne@gmail.com" method="POST" enctype="multipart/form-data">
+						<form id="contact_form" action="email.php" method="POST" enctype="multipart/form-data">
 							<div class="row">
 								<div class="col-md-12">
-									<input type="text" class="name" name="s" placeholder="First name" value="">
+									<input type="text" class="name" name="name" placeholder="First name" value="">
 								</div>
 								<div class="col-md-12">
-									<input type="text" class="email" name="s" placeholder="Email address" value="">
+									<input type="text" class="email" name="email" placeholder="Email address" value="">
 								</div>
 								<div class="col-md-12">
 									<textarea id="message" class="message" name="message" placeholder="Write message"></textarea>
+									<span id="error_form_message" style="hidden">Please fill your message</span>
 								</div>
 								<div class="col-md-12">
 									<div class="accent-button">
-										<a href="#">Send Message</a>
+										<a href="#" id="submitEmail">Send Message</a>
 									</div>
 								</div>
 							</div>
@@ -69,7 +72,7 @@
 							<li><i class="fa fa-map-marker"></i>20C Cleopatra Drive, Ottawa, ON, K2G 0B3</li>
 							<li><i class="fa fa-phone"></i>613-695-9371</li>
 							<li><i class="fa fa-envelope"></i>info@toersa.com</li>
-							<li><i class="fa fa-clock-o"></i>Mon - Fri : 08:00 - 18:00</li>
+							<li><i class="fa fa-clock-o"></i>Mon - Fri : 10:00 - 18:00</li>
 						</ul>
 					</div>
 				</div>

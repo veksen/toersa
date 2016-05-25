@@ -13,8 +13,8 @@
 			<div class="col-md-6">
 				<div class="social-icons">
 					<ul>
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.facebook.com/TOERSA-Security-10150133472005372"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/TOERSASecurity"><i class="fa fa-twitter"></i></a></li>
 					</ul>
 				</div>
 			</div>

@@ -423,4 +423,33 @@ jQuery(document).ready(function ($) {
     }
   });
 
+
+  $("#contact_form").submit(function(e){
+      var postData = $(this).serializeArray();
+      var formURL = $(this).attr("action");
+      $.ajax(
+      {
+          url : formURL,
+          type: "POST",
+          data : postData,
+          success:function(data, textStatus, jqXHR) 
+          {
+              //data: return data from server
+              alert('ca marche');
+              alert(data);
+          },
+          error: function(jqXHR, textStatus, errorThrown) 
+          {
+              //if fails
+              alert('ca marche pas');      
+          }
+      });
+      e.preventDefault(); //STOP default action
+      e.unbind(); //unbind. to stop multiple form submit.
+    });
+
+  $(".accent-button").on("click","a", function( e ) {
+    $("#contact_form").submit();
+  });
+
 });
