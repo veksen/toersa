@@ -46,20 +46,14 @@
 							<div class="row">
 								<div class="col-md-12">
 									<input type="text" class="name" name="name" placeholder="First name" value="">
-								</div>
-								<div class="col-md-12">
 									<input type="text" class="email" name="email" placeholder="Email address" value="">
-								</div>
-								<div class="col-md-12">
 									<textarea id="note" class="note" name="note" placeholder="Write message"></textarea>
-								</div>
-								<div class="col-md-12">
 									<div class="accent-button">
 										<button type="submit" id="submit-button">Send Message</button>
 									</div>
 								</div>
 							</div>
-						</form>		
+						</form>
 					</div>
 				</div>
 				<div class="col-md-4">
