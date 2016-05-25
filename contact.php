@@ -51,12 +51,11 @@
 									<input type="text" class="email" name="email" placeholder="Email address" value="">
 								</div>
 								<div class="col-md-12">
-									<textarea id="message" class="message" name="message" placeholder="Write message"></textarea>
-									<span id="error_form_message" style="hidden">Please fill your message</span>
+									<textarea id="note" class="note" name="note" placeholder="Write message"></textarea>
 								</div>
 								<div class="col-md-12">
 									<div class="accent-button">
-										<a href="#" id="submitEmail">Send Message</a>
+										<button type="submit" id="submit-button">Send Message</button>
 									</div>
 								</div>
 							</div>

@@ -423,8 +423,26 @@ jQuery(document).ready(function ($) {
     }
   });
 
+  //Contact Form Validation
+  $("#contact_form").validate({
+    rules:{
+      name:{
+        required: true
+      },
+      email:{
+        required: true,
+        email: true
+      },
+      note: {
+        required: true
+      },
 
-  $("#contact_form").submit(function(e){
+    },
+  });
+
+
+  // Sending Contact form 
+  /*$("#contact_form").submit(function(e){
       var postData = $(this).serializeArray();
       var formURL = $(this).attr("action");
       $.ajax(
@@ -446,10 +464,13 @@ jQuery(document).ready(function ($) {
       });
       e.preventDefault(); //STOP default action
       e.unbind(); //unbind. to stop multiple form submit.
-    });
+    });*/
 
-  $(".accent-button").on("click","a", function( e ) {
-    $("#contact_form").submit();
-  });
+  /*$(".accent-button").on("click","a", function( e ) {
+      $("#contact_form").submit();
+  });*/
+
+
+
 
 });

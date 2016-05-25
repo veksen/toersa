@@ -50,10 +50,11 @@
 
 <!-- Scripts -->
 <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-	<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
-    <script src="assets/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-    <script src="assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.15.0/jquery.validate.min.js"></script>
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+<script src="assets/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script src="assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
-	<script type="text/javascript" src="assets/js/plugins.js"></script>
-	<script type="text/javascript" src="assets/js/custom.js"></script>
+<script type="text/javascript" src="assets/js/plugins.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
