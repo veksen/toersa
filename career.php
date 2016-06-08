@@ -30,7 +30,6 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h1>Career</h1>
-					<span>Post-ironic scenester four dollar toast</span>
 				</div>
 			</div>
 		</div>
@@ -46,19 +45,18 @@
 				<div class="job-post">
 
 					<div class="col-md-6 col-sm-6 col-xs-6">
-						<a href="job-security-guard.html" class="job-title"><h4>Security Guard, Bar/Nightclub</h4></a>
+						<a href="#" class="job-title"><h4>Security Guard, Bar/Nightclub</h4></a>
 					</div>
 
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<div class="career-btn">
-							<a href="job-security-guard.html">Apply</a>
+							<a href="" data-toggle="modal" data-target="#myModal">Apply</a>
 						</div>
 					</div>
 
 					<div class="job-subtitle col-md-12 col-sm-12 col-xs-12">
 						<span>Ottawa,ON</span>
 						<span>Security Guard</span>
-						<span>Part-Time</span>
 					</div>
 				
 				</div>
@@ -66,76 +64,74 @@
 				<div class="job-post">
 
 					<div class="col-md-6 col-sm-6 col-xs-6">
-						<a href="" class="job-title"><h4>Security Guard, Special Events</h4></a>
+						<a href="#" class="job-title"><h4>Security Guard, Special Events</h4></a>
 					</div>
 
 					<div class="col-md-6 col-sm-6 col-xs-6">
 						<div class="career-btn">
-							<a href="#">Apply</a>
+							<a href="" data-toggle="modal" data-target="#myModal">Apply</a>
 						</div>
 					</div>
 
 					<div class="job-subtitle col-md-12 col-sm-12 col-xs-12">
 						<span>Ottawa,ON</span>
 						<span>Security Guard</span>
-						<span>Part-Time</span>
 					</div>
 				
 				</div>
 						
 			</div>
-
-			<div class="row job-group">
-				<div class="section-heading col-md-12">
-					<h2>Private Investigation</h2>
-					<div class="line-dec"></div>	
-				</div>
-				<div class="job-post">
-
-					<div class="col-md-6 col-sm-6 col-xs-6">
-						<a href="" class="job-title"><h4>Private Investigation</h4></a>
-					</div>
-
-					<div class="col-md-6 col-sm-6 col-xs-6">
-						<div class="career-btn">
-							<a href="#">Apply</a>
-						</div>
-					</div>
-
-					<div class="job-subtitle col-md-12 col-sm-12 col-xs-12">
-						<span>Ottawa,ON</span>
-						<span>Private Investigation</span>
-						<span>Part-Time</span>
-					</div>
-				</div>	
-			</div>
-
-			<div class="row job-group">
-				<div class="section-heading col-md-12">
-					<h2>Close Protection</h2>
-					<div class="line-dec"></div>	
-				</div>
-				<div class="job-post">
-
-					<div class="col-md-6 col-sm-6 col-xs-6">
-						<a href="" class="job-title"><h4>Close Protection, Specialist </h4></a>
-					</div>
-
-					<div class="col-md-6 col-sm-6 col-xs-6">
-						<div class="career-btn">
-							<a href="#">Apply</a>
-						</div>
-					</div>
-
-					<div class="job-subtitle col-md-12 col-sm-12 col-xs-12">
-						<span>Ottawa,ON</span>
-						<span>Close Protection</span>
-						<span>Part-Time</span>
-					</div>
-				</div>	
-			</div>
 		</div>
 	</section>
+
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Apply</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="quote-form">
+	      		<form id="apply_job" action="quote-guard-services.php" method="POST" enctype="multipart/form-data">
+					<div class="row">
+						<div class="col-md-12">
+							<button type="button" class="btn btn-default" data-dismiss="modal">
+								<li><i class="fa fa-paperclip"></i>Resume/CV</li>
+								<input type="file" class="file" name="file">
+							</button>	
+						</div>
+						<div class="col-md-12">
+							<input type="text" class="name" name="name" placeholder="Full Name" value="">
+						</div>
+						<div class="col-md-12">
+							<input type="text" class="email" name="email" placeholder="Email address" value="">
+						</div>
+						<div class="col-md-12">
+							<input type="tel" class="phone" name="phone" placeholder="Phone" value="">
+						</div>
+						<div class="col-md-12">
+							<input type="text" class="currentCompany" name="currentCompany" placeholder="Current Company" value="">
+						</div>
+						<div class="col-md-12">
+							<textarea id="note" class="note" name="note" placeholder="Addtional Information"></textarea>
+						</div>
+					</div>
+				
+	      	</div>
+	      </div>
+	      <div class="modal-footer">
+	      	<button type="submit" class="btn btn-default">Submit</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	      </form>	
+	    </div>
+
+	  </div>
+	</div>
 
 	<?php require("footer.php"); ?>
 </body>

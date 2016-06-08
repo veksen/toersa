@@ -2,54 +2,31 @@
 	
 	require_once("vendor/autoload.php");
 
-	$mail = new PHPMailer();
 
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$message = $_POST['massage'];
+	$name = htmlspecialchars($_POST['name']);
+	$email = htmlspecialchars($_POST['email']);
+	$message = htmlspecialchars($_POST['note']);
 
-	$error = NULL;
-
-	if(empty($name) || empty($email) || empty($message))
+	if(!empty($name) && !empty($email) && !empty($message))
 	{
-		$error = "Please fill the required field";
+		$mail = new PHPMailer();
+		$mail->isSMTP();
+		$mail->Host = "relay-hosting.secureserver.net:25";
+		$mail->SMTPAuth    = false;
+		$mail->setFrom($email, $name);
+
+		/* Configure the address the email will be sent to */
+		$mail->addAddress('pbeaulne@toersa.com', 'Pascal Beaulne');
+		$mail->Subject = 'Information Request';
+		 /* This is forwarded through a GoDaddy forwarding account */
+
+		$mail->Body    = $message;
+
+		if (!$mail->send()) {
+            echo "Oops! Something went wrong and we couldn't send your message.";
+		} else {
+            echo "Thank You! Your message has been sent.";
+		}			
 	}
-
-	echo $error;
-
-	
-
-	/*
-
-	$mail->isSMTP();
-	$mail->SMTPAuth = true;
-	$mail->SMTPDebug = 3;
-
-	$mail->Host = 'smtpout.secureserver.net';
-	$mail->Username = 'pbeaulne@toersa.com';
-	$mail->Password = 'pascal15';
-	$mail->SMTPSecure = 'ssl';
-	$mail->Port = 465;
-
-
-	$mail->From = 'pascal.beaulne@gmail.com';
-	$mail->FromName = 'Pascal Beaulne';
-	$mail->addReplyTo('pbeaulne@toersa.com', 'Reply Address');
-	$mail->addAddress('pascal.beaulne@gmail.com', 'Pascal Beaulne');
-
-	$mail->Subject = 'Get a Quote';
-	$mail->Body = 'Test for Get a Quote';
-	$mail->AltBody = 'Test for Get a Quote';
-
-	//var_dump($mail);
-
-	if(!$mail->send()){
-		echo $mail->ErrorInfo;
-
-	}
-	else
-	{
-		echo 'Email is sent';
-	}*/
 
 ?>

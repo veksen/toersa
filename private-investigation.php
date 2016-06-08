@@ -30,8 +30,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h1>Festival Services</h1>
-					<span>Post-ironic scenester four dollar toast</span>
+					<h1>Private investigation</h1>
 				</div>
 			</div>
 		</div>
@@ -42,19 +41,18 @@
 			<div class="row">
 				<div class="col-md-5">
 					<div class="left-info">
-						<h4>Guard Services</h4>
-						<p>TOERSA security is a leader in protective solutions, we offer services that are capable of adapting and matching all your needs in order to protect your business and assets that you greatly value. We ensure that our guards are professionaly trained with CPR, Smart Serve, and non-crisis intervention training.</p> 
-						
+						<h4>Private Investigation</h4>
+						<p>TOERSA Security offers a great list of services that assist you to gain the critical information you need while maintaining confidentality. Our highly specialist roster make sure to prepare and plan accordly to ensure a complete service.</p> 
+						<div class="quote-btn">
+							<a href="" data-toggle="modal" data-target="#myModal">Get a Quote</a>
+						</div> 
 					</div>
 				</div>
 				<div class="col-md-7">
 					<div class="right-content">
 						<div class="project-owl">
 						    <div class="item">
-						    	<img src="http://placehold.it/670x400" alt="" />
-						    </div>
-						    <div class="item">
-						    	<img src="http://placehold.it/670x400" alt="" />
+						    	<img src="assets/images/private_investigation.png" alt="" />
 						    </div>
 						</div>
 					</div>
@@ -62,60 +60,104 @@
 			</div>
 			<div class="row section-body">
 				<div class="section-heading col-md-12">
-					<h2>Bar/Nightclub Security</h2>
+					<h2>Surveillances</h2>
 					<div class="line-dec"></div>	
 				</div>
 				<div class="section-body col-md-12">
-					<p>TOERSA Security specializes in the handling of alcohol related issues at events and festivals. “TOERSA” is an acronym for two of the services we provide, Training and On-site Enforcement of the Responsible Service of Alcohol. Through pre-event training of all staff members and on-site enforcement, we greatly decrease the likelihood of any problems related to the sale or service of alcohol. TOERSA’s primary focus is major events and festivals that serve alcohol to the public in Ottawa and the surrounding area. These organizations typically have a special operating permit (SOP) in order to sell and serve alcohol to the public. SOPs are issued through the Liquor Control Board of Ontario (LCBO).
-					</p>
+					<p>Whether you are in need to collect information on a corporation or a person. </p>
+					
 				</div>
 			</div>
 
 			<div class="row section-body">
 				<div class="section-heading col-md-12">
-					<h2>Site & Perimeter Security</h2>
+					<h2>Insurance Investigations</h2>
 					<div class="line-dec"></div>	
 				</div>
 				<div class="section-body col-md-12">
-					<p>TOERSA Security specializes in the handling of alcohol related issues at events and festivals. “TOERSA” is an acronym for two of the services we provide, Training and On-site Enforcement of the Responsible Service of Alcohol. Through pre-event training of all staff members and on-site enforcement, we greatly decrease the likelihood of any problems related to the sale or service of alcohol. TOERSA’s primary focus is major events and festivals that serve alcohol to the public in Ottawa and the surrounding area. These organizations typically have a special operating permit (SOP) in order to sell and serve alcohol to the public. SOPs are issued through the Liquor Control Board of Ontario (LCBO).
-					</p>
+					
 				</div>
 			</div>
 
 			<div class="row section-body">
 				<div class="section-heading col-md-12">
-					<h2>24h Property Surveillance</h2>
+					<h2>Matrimonial & Family Investigations</h2>
 					<div class="line-dec"></div>	
 				</div>
 				<div class="section-body col-md-12">
-					<p>TOERSA Security specializes in the handling of alcohol related issues at events and festivals. “TOERSA” is an acronym for two of the services we provide, Training and On-site Enforcement of the Responsible Service of Alcohol. Through pre-event training of all staff members and on-site enforcement, we greatly decrease the likelihood of any problems related to the sale or service of alcohol. TOERSA’s primary focus is major events and festivals that serve alcohol to the public in Ottawa and the surrounding area. These organizations typically have a special operating permit (SOP) in order to sell and serve alcohol to the public. SOPs are issued through the Liquor Control Board of Ontario (LCBO).
-					</p>
+					
 				</div>
 			</div>
 
-			<div class="row section-body">
-				<div class="section-heading col-md-12">
-					<h2>Access Management</h2>
-					<div class="line-dec"></div>	
-				</div>
-				<div class="section-body col-md-12">
-					<p>TOERSA Security specializes in the handling of alcohol related issues at events and festivals. “TOERSA” is an acronym for two of the services we provide, Training and On-site Enforcement of the Responsible Service of Alcohol. Through pre-event training of all staff members and on-site enforcement, we greatly decrease the likelihood of any problems related to the sale or service of alcohol. TOERSA’s primary focus is major events and festivals that serve alcohol to the public in Ottawa and the surrounding area. These organizations typically have a special operating permit (SOP) in order to sell and serve alcohol to the public. SOPs are issued through the Liquor Control Board of Ontario (LCBO).
-					</p>
-				</div>
-			</div>
 
 			<div class="row section-body">
 				<div class="section-heading col-md-12">
-					<h2>Emergency Response</h2>
+					<h2>Law firm support</h2>
 					<div class="line-dec"></div>	
 				</div>
 				<div class="section-body col-md-12">
-					<p>TOERSA Security specializes in the handling of alcohol related issues at events and festivals. “TOERSA” is an acronym for two of the services we provide, Training and On-site Enforcement of the Responsible Service of Alcohol. Through pre-event training of all staff members and on-site enforcement, we greatly decrease the likelihood of any problems related to the sale or service of alcohol. TOERSA’s primary focus is major events and festivals that serve alcohol to the public in Ottawa and the surrounding area. These organizations typically have a special operating permit (SOP) in order to sell and serve alcohol to the public. SOPs are issued through the Liquor Control Board of Ontario (LCBO).
-					</p>
+					
 				</div>
 			</div>
+			<div class="quote-btn">
+				<a href="" data-toggle="modal" data-target="#myModal">Get a Quote</a>
+			</div> 
 		</div>
 	</section>
+
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Get a Quote - Private Investigation</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="quote-form">
+	      		<form id="quote_private_investigation" action="quote-guard-services.php" method="POST" enctype="multipart/form-data">
+					<div class="row">
+						<div class="col-md-12">
+							<input type="text" class="companyName" name="companyName" placeholder="Company/Client Name" value="">
+						</div>
+						<div class="col-md-12">
+							<label for="event type">Type of Service:</label>
+							<select name="evenType">
+							  <option value="Bar/NightClub">Surveillances</option>
+							  <option value="Special Event">Insurance Investigations</option>
+							  <option value="Special Event">Matrimonial & Family Investigations</option>
+							  <option value="Special Event">Law firm support</option>
+							</select>
+						</div>
+						<div class="col-md-12">
+							<input type="text" class="demographic" name="demographic" placeholder="Client Demographics" value="">
+						</div>
+						<div class="col-md-12">
+							<label for="event type">Date of Service:</label>
+							<input type="date" class="date" name="date" value="">
+						</div>
+						
+						<div class="col-md-12">
+							<input type="text" class="email" name="email" placeholder="Email address" value="">
+						</div>
+						<div class="col-md-12">
+							<textarea id="note" class="note" name="note" placeholder="Addtional Information"></textarea>
+						</div>
+					</div>
+				
+	      	</div>
+	      </div>
+	      <div class="modal-footer">
+	      	<button type="submit" class="btn btn-default">Submit</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	      </form>	
+	    </div>
+
+	  </div>
+	</div>
 
 	<?php require("footer.php"); ?>
 

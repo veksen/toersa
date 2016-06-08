@@ -4,7 +4,7 @@
 			<div class="col-md-6 col-sm-6 col-xs-12">
 				<div class="about-us">
 					<img src="assets/images/logo-2.png" alt="">
-					<p>Lorem ipsum dolor consectetur adipiscing elit. Donec et dapibus vel uis pretium augue sed metus eleifend acces.<br><br>Vestibulum ultrices fermentum velit, vel tempus augue hendrerit at.</p>
+					<p>Thank you for visiting our website. We hope to hear from you soon!<br>TOERSA Security - Helping to Secure Your Needs</p>
 				</div>
 			</div>
 			<div class="col-md-6 col-sm-6 col-xs-12">

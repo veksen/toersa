@@ -31,7 +31,6 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h1>Guard Services</h1>
-					<span>Post-ironic scenester four dollar toast</span>
 				</div>
 			</div>
 		</div>
@@ -53,10 +52,7 @@
 					<div class="right-content">
 						<div class="project-owl">
 						    <div class="item">
-						    	<img src="http://placehold.it/670x400" alt="" />
-						    </div>
-						    <div class="item">
-						    	<img src="http://placehold.it/670x400" alt="" />
+						    	<img src="assets/images/guard_service.png" alt="" />
 						    </div>
 						</div>
 					</div>
@@ -131,6 +127,76 @@
 			
 		</div>
 	</section>
+
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Get a Quote - Guard Services</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="quote-form">
+	      		<form id="quote_guard_services" action="quote-guard-services.php" method="POST" enctype="multipart/form-data">
+					<div class="row">
+						<div class="col-md-12">
+							<input type="text" class="companyName" name="companyName" placeholder="Company Name" value="">
+						</div>
+						<div class="col-md-12">
+							<label for="event type">Type of Service:</label>
+							<select name="evenType">
+							  <option value="Bar/NightClub">Bar/Nightclub</option>
+							  <option value="Special Event">Site & Perimeter Security</option>
+							  <option value="Special Event">24H Propertiy Surveillance</option>
+							  <option value="Special Event">Access Management</option>
+							  <option value="Special Event">Emergency Response</option>
+
+							</select>
+						</div>	
+						<div class="col-md-12">
+							<input type="number" class="attendace" name="attendance" placeholder="Expected Attendance" value="">
+						</div>
+						<div class="col-md-12">
+							<input type="number" class="hours" name="hours" placeholder="Hours of Operation" value="">
+						</div>
+						<div class="col-md-12">
+							<input type="text" class="demographic" name="demographic" placeholder="Patron Demographics" value="">
+						</div>
+						<div class="col-md-12">
+							<label for="event type">Date of Service:</label>
+							<input type="date" class="date" name="date" value="">
+						</div>
+						<div class="col-md-12">
+							<label for="alcohol">Will there be alcohol served ?</label>
+							<select name="alcohol">
+							  <option value="Yes">Yes</option>
+							  <option value="No">No</option>
+							</select>
+						</div>
+						
+						<div class="col-md-12">
+							<input type="text" class="email" name="email" placeholder="Email address" value="">
+						</div>
+						<div class="col-md-12">
+							<textarea id="note" class="note" name="note" placeholder="Addtional Information"></textarea>
+						</div>
+					</div>
+				
+	      	</div>
+	      </div>
+	      <div class="modal-footer">
+	      	<button type="submit" class="btn btn-default">Submit</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	      </form>	
+	    </div>
+
+	  </div>
+	</div>
+
 
 	<?php require("footer.php");?>
 </body>

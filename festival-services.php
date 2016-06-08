@@ -31,7 +31,6 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h1>Festival Services</h1>
-					<span>Post-ironic scenester four dollar toast</span>
 				</div>
 			</div>
 		</div>
@@ -45,7 +44,7 @@
 						<h4>Festival Services</h4>
 						<p>Ottawa is home to some of Canada’s largest festivals, fairs and exclusive events. Over the past 7 Years TOERSA has become Ottawa’s leading event security company. Our Current contracts include The RBC Ottawa Bluesfest, TD Jazz Festival, The Tim Hortons Dragon Boat Festival and many other large scale festivals and special events around Eastern Ontario.</p> 
 						<div class="quote-btn">
-							<a href="job-security-guard.html">Get a Quote</a>
+							<a href="" data-toggle="modal" data-target="#myModal">Get a Quote</a>
 						</div>	
 					</div>
 				</div>
@@ -53,10 +52,7 @@
 					<div class="right-content">
 						<div class="project-owl">
 						    <div class="item">
-						    	<img src="http://placehold.it/670x400" alt="" />
-						    </div>
-						    <div class="item">
-						    	<img src="http://placehold.it/670x400" alt="" />
+						    	<img src="assets/images/festival_service.png" alt="" />
 						    </div>
 						</div>
 					</div>
@@ -141,11 +137,85 @@
 				</div>
 				<div class="section-body col-md-12">
 					<p>
+						Often dealing with thousands of patrons also require high traffic control. At TOERSA Security, we work closely with the authorities to make sure the flow of traffic of both pedestrians and automobiles are safe and secure.
 					</p>
 				</div>
 			</div>
+			<div class="quote-btn">
+				<a href="" data-toggle="modal" data-target="#myModal">Get a Quote</a>
+			</div> 
 		</div>
 	</section>
+	<!-- Modal -->
+	<div id="myModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h4 class="modal-title">Get a Quote - Festival Services</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<div class="quote-form">
+	      		<form id="quote_festival_services" action="quote-guard-services.php" method="POST" enctype="multipart/form-data">
+					<div class="row">
+						<div class="col-md-12">
+							<input type="text" class="companyName" name="companyName" placeholder="Company Name" value="">
+						</div>
+						<div class="col-md-12">
+							<input type="text" class="eventName" name="eventName" placeholder="Event Name" value="">
+						</div>
+						<div class="col-md-12">
+							<label for="event type">Type of Service:</label>
+							<select name="evenType">
+							  <option value="Bar/NightClub">Bar/Nightclub</option>
+							  <option value="Special Event">Site & Perimeter Security</option>
+							  <option value="Special Event">24H Propertiy Surveillance</option>
+							  <option value="Special Event">Access Management</option>
+							  <option value="Special Event">Emergency Response</option>
+
+							</select>
+						</div>	
+						<div class="col-md-12">
+							<input type="number" class="attendace" name="attendance" placeholder="Expected Attendance" value="">
+						</div>
+						<div class="col-md-12">
+							<input type="number" class="hours" name="hours" placeholder="Hours of Operation" value="">
+						</div>
+						<div class="col-md-12">
+							<input type="text" class="demographic" name="demographic" placeholder="Patron Demographics" value="">
+						</div>
+						<div class="col-md-12">
+							<label for="event type">Date of Service:</label>
+							<input type="date" class="date" name="date" value="">
+						</div>
+						<div class="col-md-12">
+							<label for="alcohol">Will there be alcohol served ?</label>
+							<select name="alcohol">
+							  <option value="Yes">Yes</option>
+							  <option value="No">No</option>
+							</select>
+						</div>
+						
+						<div class="col-md-12">
+							<input type="text" class="email" name="email" placeholder="Email address" value="">
+						</div>
+						<div class="col-md-12">
+							<textarea id="note" class="note" name="note" placeholder="Addtional Information"></textarea>
+						</div>
+					</div>
+	      	</div>
+	      </div>
+	      <div class="modal-footer">
+	      	<button type="submit" class="btn btn-default">Submit</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	      </form>	
+	    </div>
+
+	  </div>
+	</div>
 
 	<?php require("footer.php"); ?>
 

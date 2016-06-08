@@ -31,7 +31,6 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h1>Get in touch</h1>
-					<span>Post-ironic scenester four dollar toast</span>
 				</div>
 			</div>
 		</div>

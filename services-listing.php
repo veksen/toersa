@@ -30,7 +30,6 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h1>Our Services</h1>
-					<span>Post-ironic scenester four dollar toast</span>
 				</div>
 			</div>
 		</div>
@@ -41,50 +40,50 @@
 			<div class="row">
 				<div class="col-md-4">
 					<div class="service-item">
-						<img src="http://placehold.it/370x210" alt="">
+						<img src="assets/images/guard_service_index_img.png" alt="">
 						<h4>Guard Services</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pharetra massa at lacinia. Fusce eleifend turpis in dapibus faucibus vestibulum.</p>
-						<a href="#">Read More</a>
+						<p>TOERSA security is a leader in protective solutions, we offer services that are capable of adapting and matching all your needs...</p>
+						<a href="guard-services.php">Read More</a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="service-item">
-						<img src="http://placehold.it/370x210" alt="">
+						<img src="assets/images/festival_service_index.png" alt="">
 						<h4>Festival Services</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pharetra massa at lacinia. Fusce eleifend turpis in dapibus faucibus vestibulum.</p>
-						<a href="#">Read More</a>
+						<p>Ottawa is home to some of Canada’s largest festivals, fairs and exclusive events. Over the past 7 Years TOERSA has become Ottawa’s leading event security company...</p>
+						<a href="festival-services.php">Read More</a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="service-item">
-						<img src="http://placehold.it/370x210" alt="">
+						<img src="assets/images/close_protection_index_img.png" alt="">
 						<h4>Close Protection</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pharetra massa at lacinia. Fusce eleifend turpis in dapibus faucibus vestibulum.</p>
-						<a href="#">Read More</a>
+						<p>Toersa Security has one of Ottawa’s only Close Protection Divisions with a roster of trained and experienced Close Protection Specialists. Our highly skilled Specialists...</p>
+						<a href="close-protection.php">Read More</a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="service-item second-row">
-						<img src="http://placehold.it/370x210" alt="">
+						<img src="assets/images/training_index.png" alt="">
 						<h4>Training</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pharetra massa at lacinia. Fusce eleifend turpis in dapibus faucibus vestibulum.</p>
-						<a href="#">Read More</a>
+						<p>TOERSA security is thrilled to offer quality trainings that build the future of the security industry. We ensure that our courses provide all the knowledge...</p>
+						<a href="training.php">Read More</a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="service-item second-row">
-						<img src="http://placehold.it/370x210" alt="">
+						<img src="assets/images/private_investigation_index_img.png" alt="">
 						<h4>Private Investigation</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pharetra massa at lacinia. Fusce eleifend turpis in dapibus faucibus vestibulum.</p>
-						<a href="#">Read More</a>
+						<p>TOERSA Security offers a great list of services that assist you to gain the critical information you need while maintaining confidentality. Our highly specialist roster...</p>
+						<a href="private-investigation.php">Read More</a>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="service-item second-row">
-						<img src="http://placehold.it/370x210" alt="">
+						<img src="assets/images/lost_prevention_index_img.png" alt="">
 						<h4>Lost Prevention</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus pharetra massa at lacinia. Fusce eleifend turpis in dapibus faucibus vestibulum.</p>
-						<a href="#">Read More</a>
+						<p>TOERSA Security offers numerous loss prevention services that fit your needs. We operate a roster of fully qualified guard weither in uniforms or in plain cloths...</p>
+						<a href="lost-prevention.php">Read More</a>
 					</div>
 				</div>
 			</div>

@@ -64,7 +64,7 @@ jQuery(document).ready(function ($) {
     e.preventDefault();
   });
 
-  $('#getting-started').countdown('2016/10/10', function (event) {
+  $('#getting-started').countdown('2016/06/10', function (event) {
     var $this = $(this).html(event.strftime(''
       + '<div class="col-md-2 col-md-offset-2"><span class="number">%D</span> <span class="label">days</span></div>'
       + '<div class="col-md-2"><span class="number">%H</span> <span class="label">hours</span></div> '
@@ -423,6 +423,139 @@ jQuery(document).ready(function ($) {
     }
   });
 
+
+  //Modal Guard services Quote validation
+  $("#quote_guard_services").validate({
+    rules:{
+      companyName:{
+        required: true
+      },
+      attendance:{
+        required: true,
+        number: true
+      },
+      hours:{
+        required: true,
+        number: true
+      },
+      demographic:{
+        required: true
+      },
+      date:{
+        required: true,
+        date: true
+      },
+      email:{
+        required: true,
+        email: true
+      }
+    }
+  });
+
+  //Modal Festival services quote validation
+  $("#quote_festival_services").validate({
+    rules:{
+      companyName:{
+        required: true
+      },
+      eventName:{
+        required: true
+      },
+       attendance:{
+        required: true,
+        number: true
+      },
+      hours:{
+        required: true,
+        number: true
+      },
+      demographic:{
+        required: true
+      },
+      date:{
+        required: true,
+        date: true
+      },
+      email:{
+        required: true,
+        email: true
+      }
+
+    }
+  });
+
+  //Modal close protection quote validation
+  $("#quote_close_protection").validate({
+    rules:{
+      companyName:{
+        required: true
+      },
+       principles:{
+        required: true,
+        number: true
+      },
+      hours:{
+        required: true,
+        number: true
+      },
+      demographic:{
+        required: true
+      },
+      date:{
+        required: true,
+        date: true
+      },
+      email:{
+        required: true,
+        email: true
+      }
+
+    }
+  });
+
+  //Modal close protection quote validation
+  $("#quote_private_investigation").validate({
+    rules:{
+      companyName:{
+        required: true
+      },
+      demographic:{
+        required: true
+      },
+      date:{
+        required: true,
+        date: true
+      },
+      email:{
+        required: true,
+        email: true
+      }
+
+    }
+  });
+
+  //Modal close protection quote validation
+  $("#quote_lost_prevention").validate({
+    rules:{
+      companyName:{
+        required: true
+      },
+      hours:{
+        required: true,
+        number: true
+      },
+      date:{
+        required: true,
+        date: true
+      },
+      email:{
+        required: true,
+        email: true
+      }
+
+    }
+  });
+
   //Contact Form Validation
   $("#contact_form").validate({
     rules:{
@@ -436,39 +569,241 @@ jQuery(document).ready(function ($) {
       note: {
         required: true
       },
-
-    },
+    }
   });
 
 
-  // Sending Contact form 
-  /*$("#contact_form").submit(function(e){
-      var postData = $(this).serializeArray();
-      var formURL = $(this).attr("action");
-      $.ajax(
-      {
-          url : formURL,
-          type: "POST",
-          data : postData,
-          success:function(data, textStatus, jqXHR) 
-          {
-              //data: return data from server
-              alert('ca marche');
-              alert(data);
-          },
-          error: function(jqXHR, textStatus, errorThrown) 
-          {
-              //if fails
-              alert('ca marche pas');      
-          }
-      });
-      e.preventDefault(); //STOP default action
-      e.unbind(); //unbind. to stop multiple form submit.
-    });*/
 
-  /*$(".accent-button").on("click","a", function( e ) {
-      $("#contact_form").submit();
-  });*/
+  // Sending Contact form 
+  $("#contact_form").submit(function(e){
+
+      e.preventDefault(); //STOP default action
+      
+      var isvalid = $("#contact_form").valid();
+
+      if(isvalid)
+      {
+        var postData = $(this).serializeArray();
+        var formURL = $(this).attr("action");
+        $.ajax(
+        {
+            url : formURL,
+            type: "POST",
+            data : postData,
+            success:function(data, textStatus, jqXHR) 
+            {
+                //data: return data from server
+                $("#contact_form").trigger("reset");
+            },
+            error: function(jqXHR, textStatus, errorThrown) 
+            {
+                //if fails
+                $("#contact_form").trigger("reset");  
+            }
+        });
+      }
+    });
+
+  $("#quote_guard_services").submit(function(e){
+
+    var isvalid = $("#quote_guard_services").valid();
+
+    if(isvalid)
+    {
+      $('#myModal').modal('hide');
+      $.ajax(
+        {
+            url : formURL,
+            type: "POST",
+            data : postData,
+            success:function(data, textStatus, jqXHR) 
+            {
+                //data: return data from server
+                alert('ca marche');
+                $("#quote_guard_services").trigger("reset");
+
+            },
+            error: function(jqXHR, textStatus, errorThrown) 
+            {
+                //if fails
+                alert('ca marche pas');
+                $("#quote_guard_services").trigger("reset");   
+            }
+        });
+      }
+
+      e.preventDefault(); //STOP default action
+
+  });
+
+  $("#quote_festival_services").submit(function(e){
+
+    var isvalid = $("#quote_festival_services").valid();
+
+    if(isvalid)
+    {
+      $('#myModal').modal('hide');
+      $.ajax(
+        {
+            url : formURL,
+            type: "POST",
+            data : postData,
+            success:function(data, textStatus, jqXHR) 
+            {
+                //data: return data from server
+                alert('ca marche');
+                $("#quote_festival_services").trigger("reset");
+
+            },
+            error: function(jqXHR, textStatus, errorThrown) 
+            {
+                //if fails
+                alert('ca marche pas');
+                $("#quote_festival_services").trigger("reset");   
+            }
+        });
+      }
+
+      e.preventDefault(); //STOP default action
+
+  });
+
+  $("#quote_close_protection").submit(function(e){
+
+    var isvalid = $("#quote_close_protection").valid();
+
+    if(isvalid)
+    {
+      $('#myModal').modal('hide');
+      $.ajax(
+        {
+            url : formURL,
+            type: "POST",
+            data : postData,
+            success:function(data, textStatus, jqXHR) 
+            {
+                //data: return data from server
+                alert('ca marche');
+                $("#quote_close_protection").trigger("reset");
+
+            },
+            error: function(jqXHR, textStatus, errorThrown) 
+            {
+                //if fails
+                alert('ca marche pas');
+                $("#quote_close_protection").trigger("reset");   
+            }
+        });
+      }
+
+      e.preventDefault(); //STOP default action
+
+  });
+
+  $("#quote_private_investigation").submit(function(e){
+
+    var isvalid = $("#quote_private_investigation").valid();
+
+    if(isvalid)
+    {
+      $('#myModal').modal('hide');
+      $.ajax(
+        {
+            url : formURL,
+            type: "POST",
+            data : postData,
+            success:function(data, textStatus, jqXHR) 
+            {
+                //data: return data from server
+                alert('ca marche');
+                $("#quote_private_investigation").trigger("reset");
+
+            },
+            error: function(jqXHR, textStatus, errorThrown) 
+            {
+                //if fails
+                alert('ca marche pas');
+                $("#quote_private_investigation").trigger("reset");   
+            }
+        });
+      }
+
+      e.preventDefault(); //STOP default action
+
+  });
+
+  $("#quote_lost_prevention").submit(function(e){
+
+    var isvalid = $("#quote_lost_prevention").valid();
+
+    if(isvalid)
+    {
+      $('#myModal').modal('hide');
+      $.ajax(
+        {
+            url : formURL,
+            type: "POST",
+            data : postData,
+            success:function(data, textStatus, jqXHR) 
+            {
+                //data: return data from server
+                alert('ca marche');
+                $("#quote_lost_prevention").trigger("reset");
+
+            },
+            error: function(jqXHR, textStatus, errorThrown) 
+            {
+                //if fails
+                alert('ca marche pas');
+                $("#quote_lost_prevention").trigger("reset");   
+            }
+        });
+      }
+
+      e.preventDefault(); //STOP default action
+
+  });
+
+
+  $("#serviceType").on('change', function(e){
+
+    var optionSelected = $("option:selected", this);
+    var valueSelected = this.value;
+
+    switch(valueSelected) {
+
+      case 'GS':
+        $('form').attr('id', 'quote_guard_services');
+        $("#formContent").remove();
+        var appendForm = "<div id=\"formContent\"><div class=\"col-md-12\"><input type=\"text\" class=\"companyName\" name=\"companyName\" placeholder=\"Company Name\" value=\"\"></div><div class=\"col-md-12\"><label for=\"event type\">Type of Service:</label><select name=\"evenType\"><option value=\"Bar/NightClub\">Bar/Nightclub</option><option value=\"Special Event\">Site & Perimeter Security</option><option value=\"Special Event\">24H Propertiy Surveillance</option><option value=\"Special Event\">Access Management</option><option value=\"Special Event\">Emergency Response</option></select></div><div class=\"col-md-12\"><input type=\"number\" class=\"attendace\" name=\"attendance\" placeholder=\"Expected Attendance\" value=\"\"></div><div class=\"col-md-12\"><input type=\"number\" class=\"hours\" name=\"hours\" placeholder=\"Hours of Operation\" value=\"\"></div><div class=\"col-md-12\"><input type=\"text\" class=\"demographic\" name=\"demographic\" placeholder=\"Patron Demographics\" value=\"\"></div><div class=\"col-md-12\"><label for=\"event type\">Date of Service:</label><input type=\"date\" class=\"date\" name=\"date\" value=\"\"></div><div class=\"col-md-12\"><label for=\"alcohol\">Will there be alcohol served ?</label><select name=\"alcohol\"><option value=\"Yes\">Yes</option><option value=\"No\">No</option></select></div><div class=\"col-md-12\"><input type=\"text\" class=\"email\" name=\"email\" placeholder=\"Email address\" value=\"\"></div><div class=\"col-md-12\"><textarea id=\"note\" class=\"note\" name=\"note\" placeholder=\"Addtional Information\"></textarea></div></div>";
+        $("#formContentWrapper").append(appendForm);
+        break;
+      case 'FS':
+        $('form').attr('id', 'quote_festival_services');
+        $("#formContent").remove();
+        var appendForm = "<div id=\"formContent\"><div class=\"col-md-12\"><input type=\"text\" class=\"companyName\" name=\"companyName\" placeholder=\"Company Name\" value=\"\"></div><div class=\"col-md-12\"><input type=\"text\" class=\"eventName\" name=\"eventName\" placeholder=\"Event Name\" value=\"\"></div><div class=\"col-md-12\"><label for=\"event type\">Type of Service:</label><select name=\"evenType\"><option value=\"Bar/NightClub\">Bar/Nightclub</option><option value=\"Special Event\">Site & Perimeter Security</option><option value=\"Special Event\">24H Propertiy Surveillance</option><option value=\"Special Event\">Access Management</option><option value=\"Special Event\">Emergency Response</option></select></div><div class=\"col-md-12\"><input type=\"number\" class=\"attendace\" name=\"attendance\" placeholder=\"Expected Attendance\" value=\"\"></div><div class=\"col-md-12\"><input type=\"number\" class=\"hours\" name=\"hours\" placeholder=\"Hours of Operation\" value=\"\"></div><div class=\"col-md-12\"><input type=\"text\" class=\"demographic\" name=\"demographic\" placeholder=\"Patron Demographics\" value=\"\"></div><div class=\"col-md-12\"><label for=\"event type\">Date of Service:</label><input type=\"date\" class=\"date\" name=\"date\" value=\"\"></div><div class=\"col-md-12\"><label for=\"alcohol\">Will there be alcohol served ?</label><select name=\"alcohol\"><option value=\"Yes\">Yes</option><option value=\"No\">No</option></select></div><div class=\"col-md-12\"><input type=\"text\" class=\"email\" name=\"email\" placeholder=\"Email address\" value=\"\"></div><div class=\"col-md-12\"><textarea id=\"note\" class=\"note\" name=\"note\" placeholder=\"Addtional Information\"></textarea></div></div>";
+        $("#formContentWrapper").append(appendForm);
+        break;
+      case 'CP':
+        $('form').attr('id', 'quote_close_protection');
+        $("#formContent").remove();
+        var appendForm = "<div id=\"formContent\"><div class=\"col-md-12\"><input type=\"text\" class=\"companyName\" name=\"companyName\" placeholder=\"Company/Client Name\" value=\"\"></div><div class=\"col-md-12\"><label for=\"event type\">Type of Service:</label><select name=\"evenType\"><option value=\"Bar/NightClub\">Executives/VIP Protection</option><option value=\"Special Event\">Personal Protection</option><option value=\"Special Event\">Residential Protection</option><option value=\"Special Event\">Assets Protection</option><option value=\"Special Event\">Executive Drivers</option><option value=\"Special Event\">Security Risk Management</option></select></div><div class=\"col-md-12\"><input type=\"number\" class=\"attendace\" name=\"principles\" placeholder=\"Number of Principles\" value=\"\"></div><div class=\"col-md-12\"><input type=\"number\" class=\"hours\" name=\"hours\" placeholder=\"Lenght of Service\" value=\"\"></div><div class=\"col-md-12\"><input type=\"text\" class=\"demographic\" name=\"demographic\" placeholder=\"Client Demographics\" value=\"\"></div><div class=\"col-md-12\"><label for=\"event type\">Date of Service:</label><input type=\"date\" class=\"date\" name=\"date\" value=\"\"></div><div class=\"col-md-12\"><input type=\"text\" class=\"email\" name=\"email\" placeholder=\"Email address\" value=\"\"></div><div class=\"col-md-12\"><textarea id=\"note\" class=\"note\" name=\"note\" placeholder=\"Addtional Information\"></textarea></div></div>";
+        $("#formContentWrapper").append(appendForm);
+        break;
+      case 'PI':
+        $('form').attr('id', 'quote_private_investigation');
+        $("#formContent").remove();
+        var appendForm = "<div id=\"formContent\"><div class=\"col-md-12\"><input type=\"text\" class=\"companyName\" name=\"companyName\" placeholder=\"Company/Client Name\" value=\"\"></div><div class=\"col-md-12\"><label for=\"event type\">Type of Service:</label><select name=\"evenType\"><option value=\"Bar/NightClub\">Surveillances</option><option value=\"Special Event\">Insurance Investigations</option><option value=\"Special Event\">Matrimonial & Family Investigations</option><option value=\"Special Event\">Law firm support</option></select></div><div class=\"col-md-12\"><input type=\"text\" class=\"demographic\" name=\"demographic\" placeholder=\"Client Demographics\" value=\"\"></div><div class=\"col-md-12\"><label for=\"event type\">Date of Service:</label><input type=\"date\" class=\"date\" name=\"date\" value=\"\"></div><div class=\"col-md-12\"><input type=\"text\" class=\"email\" name=\"email\" placeholder=\"Email address\" value=\"\"></div><div class=\"col-md-12\"><textarea id=\"note\" class=\"note\" name=\"note\" placeholder=\"Addtional Information\"></textarea></div></div>";
+        $("#formContentWrapper").append(appendForm);
+        break;
+      case 'LP':
+        $('form').attr('id', 'quote_lost_prevention');
+        $("#formContent").remove();
+        var appendForm = "<div id=\"formContent\"><div class=\"col-md-12\"><input type=\"text\" class=\"companyName\" name=\"companyName\" placeholder=\"Company Name\" value=\"\"></div><div class=\"col-md-12\"><input type=\"number\" class=\"hours\" name=\"hours\" placeholder=\"Times of Operation\" value=\"\"></div><div class=\"col-md-12\"><label for=\"event type\">Date of Service:</label><input type=\"date\" class=\"date\" name=\"date\" value=\"\"></div><div class=\"col-md-12\"><input type=\"text\" class=\"email\" name=\"email\" placeholder=\"Email address\" value=\"\"></div><div class=\"col-md-12\"><textarea id=\"note\" class=\"note\" name=\"note\" placeholder=\"Addtional Information\"></textarea></div></div>";
+        $("#formContentWrapper").append(appendForm);
+        break;
+    }
+  });
 
 
 

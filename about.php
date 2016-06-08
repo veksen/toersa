@@ -31,7 +31,6 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h1>About Us</h1>
-					<span>Post-ironic scenester four dollar toast</span>
 				</div>
 			</div>
 		</div>
@@ -42,14 +41,14 @@
 			<div class="row">
 				<div class="col-md-5">
 					<div class="left-image">
-						<img src="assets/images/Chris_Ibey.jpg" alt="">
+						<img src="/assets/images/Chris_Ibey.jpg" alt="">
 					</div>
 				</div>
 				<div class="col-md-7">
 					<div class="expert-content">
 						<h4>Message from our CEO & President</h4>
 						<div class="line-dec"></div>
-						<p>Thank you for taking the time to visit our website! As you may have already learned, we provide professional security guard services. We pride ourselves on professionalism and customer service. We know that we play a big role in the success of our client's operations.<br>Year after year TOERSA continues to grow at a great pace. When we started in 2008 we had a handful of security guards, we now employ over 350 security guards working in both Ontario and Quebec. We provide the Ontario Security Guard Training Course as mandated by the Private Security and Investigative Services Branch to help new applicants get their security guard license. We have also expanded into Protective Services and Private Investigations. Our growth is the direct result of an excellent team.<br>Our management team does a great job improving procedures and putting new systems in place. The front line Security Guards continue to exceed expectations. Ongoing recruitment has helped to develop our team of competent security guards focused on customer service.<br>Again, thank you for visiting our website. We hope to hear from you soon!<br>I hope you will join us in this journey!</p>
+						<p>Thank you for taking the time to visit our website! As you may have already learned, we provide professional security guard services. We pride ourselves on professionalism and customer service. We know that we play a big role in the success of our client's operations.<br>Year after year TOERSA continues to grow at a great pace. When we started in 2008 we had a handful of security guards, we now employ over 350 security guards working in both Ontario and Quebec. We provide the Ontario Security Guard Training Course as mandated by the Private Security and Investigative Services Branch to help new applicants get their security guard license. We have also expanded into Protective Services and Private Investigations. Our growth is the direct result of an excellent team.<br>Our management team does a great job improving procedures and putting new systems in place. The front line Security Guards continue to exceed expectations. Ongoing recruitment has helped to develop our team of competent security guards focused on customer service.<br>Again, thank you for visiting our website. We hope to hear from you soon!<br>I hope you will join us in this journey!<br><br>Chris Ibey</p>
 						
 					</div>
 				</div>
@@ -61,7 +60,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="section-heading col-md-12 text-center">
-					<h2>Meet The Talents</h2>
+					<h2>Meet The Team</h2>
 					<div class="line-dec"></div>
 				</div>
 			</div>
@@ -69,14 +68,20 @@
 				<div class="col-md-3">
 					<div class="team-member">
 						<div class="thumb-holder">
-							<img src="assets/images/mark.jpg" alt="">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="team-member">
+						<div class="thumb-holder">
+							<img src="assets/images/mark.png" alt="">
 							<div class="hover-effect">
 								<div class="hover-content">
 									<h4>Mark Williams</h4>
 									<span>Operation Manager</span>
 									<ul>
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="https://www.linkedin.com/company/toersa-security-inc-"><i class="fa fa-linkedin"></i></a></li>
 									</ul>
 								</div>
 							</div>
@@ -86,51 +91,23 @@
 				<div class="col-md-3">
 					<div class="team-member">
 						<div class="thumb-holder">
-							<img src="http://placehold.it/270x290" alt="">
-							<div class="hover-effect">
-								<div class="hover-content">
-									<h4>Jason Hoy</h4>
-									<span>Operation Manager</span>
-									<ul>
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="team-member">
-						<div class="thumb-holder">
-							<img src="http://placehold.it/270x290" alt="">
-							<div class="hover-effect">
-								<div class="hover-content">
-									<h4>Pierre Perron-Desormeaux</h4>
-									<span>Operation Manager - QC</span>
-									<ul>
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="team-member">
-						<div class="thumb-holder">
-							<img src="http://placehold.it/270x290" alt="">
+							<img src="assets/images/heather.png" alt="">
 							<div class="hover-effect">
 								<div class="hover-content">
 									<h4>Heather Hull</h4>
 									<span>Office Manager</span>
 									<ul>
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="https://www.linkedin.com/company/toersa-security-inc-"><i class="fa fa-linkedin"></i></a></li>
 									</ul>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="team-member">
+						<div class="thumb-holder">
+							
 						</div>
 					</div>
 				</div>
