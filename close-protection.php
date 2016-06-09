@@ -48,11 +48,7 @@
 						 and High profile individuals throughout Ontario.</p>
 
 						 <p>Our specialist have no less than three years of close protection experience with most having
-						  over 10 years of experience in the security field.</p> 
-
-
-
-						
+						  over 10 years of experience in the security field.</p>
 					</div>
 					<div class="quote-btn">
 						<a href="" data-toggle="modal" data-target="#myModal">Get a Quote</a>
@@ -75,7 +71,6 @@
 				</div>
 				<div class="section-body col-md-12">
 					<p>
-						
 					</p>
 				</div>
 			</div>
@@ -149,7 +144,7 @@
 	      </div>
 	      <div class="modal-body">
 	      	<div class="quote-form">
-	      		<form id="quote_close_protection" action="quote-guard-services.php" method="POST" enctype="multipart/form-data">
+	      		<form id="quote_close_protection" action="quote-close-protection.php" method="POST" enctype="multipart/form-data">
 					<div class="row">
 						<div class="col-md-12">
 							<input type="text" class="companyName" name="companyName" placeholder="Company/Client Name" value="">
@@ -157,12 +152,12 @@
 						<div class="col-md-12">
 							<label for="event type">Type of Service:</label>
 							<select name="evenType">
-							  <option value="Bar/NightClub">Executives/VIP Protection</option>
-							  <option value="Special Event">Personal Protection</option>
-							  <option value="Special Event">Residential Protection</option>
-							  <option value="Special Event">Assets Protection</option>
-							  <option value="Special Event">Executive Drivers</option>
-							  <option value="Special Event">Security Risk Management</option>
+							  <option value="Executives/VIP Protection">Executives/VIP Protection</option>
+							  <option value="Personal Protection">Personal Protection</option>
+							  <option value="Residential Protection">Residential Protection</option>
+							  <option value="Assets Protection">Assets Protection</option>
+							  <option value="Executive Drivers">Executive Drivers</option>
+							  <option value="Security Risk Management">Security Risk Management</option>
 							</select>
 						</div>	
 						<div class="col-md-12">

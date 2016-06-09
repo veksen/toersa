@@ -90,3 +90,66 @@
 	
 
 }
+
+.application-link {
+
+	border: 1px solid @border-color;
+	border-radius: 3px;
+	padding: 6px 8px;
+	background: @bg-light;
+
+	i {
+		margin-right: 5px;
+		color: @accent-color;
+		font-size: 15px;
+
+	}
+	span {
+    	line-height: 1.33;
+		margin-top: 0px;
+		font-family: @primary-font;
+		font-size: 15px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin-bottom: 0px;
+		color: @text-color-two;
+	}
+	
+	.application-file-input {
+
+		position: absolute;
+	    opacity: 0;
+	    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	    filter: alpha(opacity=0);
+	    top: 0;
+	    left: 0;
+	}
+}
+
+.bar {
+
+	width:100%;
+	background: @bg-light;
+	padding: 3px;
+	margin-top: 10px;
+	box-shadow: inset 0 1px 3px rgba(0,0,0,.2); 
+	border-radius: 3px;
+	box-sizing: border-box;
+
+	.bar-fill {
+		height:10px;
+		display: block;
+		background: @accent-color;
+		width:0;
+		border-radius: 3px;
+		-webkit-transition: width 0.8s ease;
+    	-moz-transition: width 0.8s ease;
+    	-o-transition: width 0.8s ease;
+    	transition: width 0.8s ease;
+	}
+	
+
+}
+
+    

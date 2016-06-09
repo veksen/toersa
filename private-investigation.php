@@ -63,9 +63,7 @@
 					<h2>Surveillances</h2>
 					<div class="line-dec"></div>	
 				</div>
-				<div class="section-body col-md-12">
-					<p>Whether you are in need to collect information on a corporation or a person. </p>
-					
+				<div class="section-body col-md-12">					
 				</div>
 			</div>
 
@@ -117,25 +115,25 @@
 	      </div>
 	      <div class="modal-body">
 	      	<div class="quote-form">
-	      		<form id="quote_private_investigation" action="quote-guard-services.php" method="POST" enctype="multipart/form-data">
+	      		<form id="quote_private_investigation" action="quote-private-investigation.php" method="POST" enctype="multipart/form-data">
 					<div class="row">
 						<div class="col-md-12">
 							<input type="text" class="companyName" name="companyName" placeholder="Company/Client Name" value="">
 						</div>
 						<div class="col-md-12">
-							<label for="event type">Type of Service:</label>
+							<label for="eventType">Type of Service:</label>
 							<select name="evenType">
-							  <option value="Bar/NightClub">Surveillances</option>
-							  <option value="Special Event">Insurance Investigations</option>
-							  <option value="Special Event">Matrimonial & Family Investigations</option>
-							  <option value="Special Event">Law firm support</option>
+							  <option value="Surveillances">Surveillances</option>
+							  <option value="Insurance Investigations">Insurance Investigations</option>
+							  <option value="Matrimonial and Family Investigations">Matrimonial & Family Investigations</option>
+							  <option value="Law firm support">Law firm support</option>
 							</select>
 						</div>
 						<div class="col-md-12">
 							<input type="text" class="demographic" name="demographic" placeholder="Client Demographics" value="">
 						</div>
 						<div class="col-md-12">
-							<label for="event type">Date of Service:</label>
+							<label for="date">Date of Service:</label>
 							<input type="date" class="date" name="date" value="">
 						</div>
 						

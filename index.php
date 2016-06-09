@@ -130,6 +130,14 @@
 									<span>Security Guard</span>
 								</div>
 						    </li>
+						    <li data-thumb="assets/images/caley_testimonial.png">
+						      <div class="item">
+									<i class="fa fa-quote-left"></i>
+									<p>TOERSA has been an awesome company to work for. Every guard is friendly and easy to get along with, which makes it an enjoyable environment to work in.</p>
+									<h4>Caley Walker</h4>
+									<span>Security Guard</span>
+								</div>
+						    </li>
 						    <li data-thumb="assets/images/paul_testimonial.png">
 						      <div class="item">
 									<i class="fa fa-quote-left"></i>

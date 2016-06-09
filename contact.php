@@ -47,6 +47,7 @@
 									<input type="text" class="name" name="name" placeholder="First name" value="">
 									<input type="text" class="email" name="email" placeholder="Email address" value="">
 									<textarea id="note" class="note" name="note" placeholder="Write message"></textarea>
+									<div id="ajax-response"></div>
 									<div class="accent-button">
 										<button type="submit" id="submit-button">Send Message</button>
 									</div>

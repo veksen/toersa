@@ -158,7 +158,7 @@
 	      </div>
 	      <div class="modal-body">
 	      	<div class="quote-form">
-	      		<form id="quote_festival_services" action="quote-guard-services.php" method="POST" enctype="multipart/form-data">
+	      		<form id="quote_festival_services" action="quote-festival-services.php" method="POST" enctype="multipart/form-data">
 					<div class="row">
 						<div class="col-md-12">
 							<input type="text" class="companyName" name="companyName" placeholder="Company Name" value="">
@@ -169,15 +169,16 @@
 						<div class="col-md-12">
 							<label for="event type">Type of Service:</label>
 							<select name="evenType">
-							  <option value="Bar/NightClub">Bar/Nightclub</option>
-							  <option value="Special Event">Site & Perimeter Security</option>
-							  <option value="Special Event">24H Propertiy Surveillance</option>
-							  <option value="Special Event">Access Management</option>
-							  <option value="Special Event">Emergency Response</option>
-
+							  <option value="Stage Security">Stage Security</option>
+							  <option value="Site and Perimeter Security">Site & Perimeter Security</option>
+							  <option value="Gate Access Control">Gate Access Control</option>
+							  <option value="Security Patrols">Security Patrols</option>
+							  <option value="Undercover Surveillance">Undercover Surveillance</option>
+							  <option value="Alcohol Control">Alcohol Control</option>
+							  <option value="Parking and Traffic Control">Parking & Traffic Control</option>
 							</select>
 						</div>	
-						<div class="col-md-12">
+						<div class="col-md-12"
 							<input type="number" class="attendace" name="attendance" placeholder="Expected Attendance" value="">
 						</div>
 						<div class="col-md-12">

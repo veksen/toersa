@@ -394,12 +394,17 @@
 		margin-top: 45px;
 		.thumb-holder {
 			overflow: hidden;
+			max-width: 270px;
+    		max-height: 290px;
+    		margin: 0 auto;
 			img {
-				width: 100%;
+				
 				overflow: hidden;
 				position: relative;
 			}
 			.hover-effect {
+				max-width: 270px;
+				text-align: center;
 				padding: 15px;
 				right: 0;
 				left: 0;
@@ -412,6 +417,7 @@
 				background-color: @accent-color;
 				.hover-content {
 					text-align: center;
+					max-width: 270px;
 					h4 {
 						font-family: @primary-font;
 						font-size: 14px;

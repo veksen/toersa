@@ -96,14 +96,8 @@
 	      </div>
 	      <div class="modal-body">
 	      	<div class="quote-form">
-	      		<form id="apply_job" action="quote-guard-services.php" method="POST" enctype="multipart/form-data">
+	      		<form id="apply_job" action="email-career.php" method="POST" enctype="multipart/form-data">
 					<div class="row">
-						<div class="col-md-12">
-							<button type="button" class="btn btn-default" data-dismiss="modal">
-								<li><i class="fa fa-paperclip"></i>Resume/CV</li>
-								<input type="file" class="file" name="file">
-							</button>	
-						</div>
 						<div class="col-md-12">
 							<input type="text" class="name" name="name" placeholder="Full Name" value="">
 						</div>

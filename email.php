@@ -16,7 +16,7 @@
 		$mail->setFrom($email, $name);
 
 		/* Configure the address the email will be sent to */
-		$mail->addAddress('pbeaulne@toersa.com', 'Pascal Beaulne');
+		$mail->addAddress('info@toersa.com', 'Info');
 		$mail->Subject = 'Information Request';
 		 /* This is forwarded through a GoDaddy forwarding account */
 
